@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>霓虹風格個人作品集</title>
+    <meta name="description" content="霓虹風格個人作品集，包含視覺規劃、互動展示與委託表單。" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="neon-canvas" aria-hidden="true"></canvas>
+    <div class="circuit-bg" aria-hidden="true"></div>
+    <div class="scanlines" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#hero" aria-label="返回首頁">
+        <span class="brand-mark">N</span>
+        <span>Neon Portfolio</span>
+      </a>
+      <nav class="site-nav" aria-label="主要導覽">
+        <a href="#visuals">視覺系統</a>
+        <a href="#build">架構實作</a>
+        <a href="#gallery">作品展示</a>
+        <a href="#contact">訂製聯繫</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="hero">
+        <div class="hero-title reveal">
+          <h1>
+            <span>霓虹風格個人作品集：</span>
+            <strong>從視覺規劃到開發實作的全攻略</strong>
+          </h1>
+        </div>
+
+        <div class="dashboard-grid">
+          <section class="hud-panel blue-panel reveal" id="visuals" aria-labelledby="visuals-title">
+            <div class="panel-corner"></div>
+            <h2 id="visuals-title">視覺核心與 UX 設計</h2>
+            <p class="panel-subtitle">(Visuals & User Experience)</p>
+
+            <article class="info-card">
+              <h3>霓虹視覺系統定義</h3>
+              <div class="palette-row">
+                <div class="color-swatch black">#050505</div>
+                <div class="color-swatch pink"></div>
+                <div class="color-swatch cyan"></div>
+                <div class="color-swatch lime"></div>
+              </div>
+              <p>以深邃黑為底，搭配電光粉、藍與螢光綠製造強烈對比。</p>
+            </article>
+
+            <article class="info-card">
+              <h3>真實燈管動態特效</h3>
+              <div class="tube-demo">
+                <span class="demo-tube active"></span>
+                <span class="demo-tube glitch"></span>
+              </div>
+              <div class="caption-grid">
+                <span>box-shadow<br />呼吸發光效果</span>
+                <span>透明度模擬<br />燈管閃爍</span>
+              </div>
+            </article>
+
+            <article class="info-card">
+              <h3>直覺化的使用者流轉</h3>
+              <div class="flow-row">
+                <div class="typed-box">
+                  <span id="typed-text">TYP</span><span class="cursor"></span>
+                </div>
+                <div class="mini-window">
+                  <span></span><span></span><span></span>
+                  <b></b><i></i><em></em>
+                </div>
+                <div class="profile-card">
+                  <b></b><span></span><span></span><span></span>
+                </div>
+              </div>
+              <div class="caption-grid three">
+                <span>打字機導入</span>
+                <span>推動進場動畫</span>
+                <span>導向互動表單</span>
+              </div>
+            </article>
+          </section>
+
+          <section class="hud-panel green-panel reveal" id="build" aria-labelledby="build-title">
+            <div class="panel-corner"></div>
+            <h2 id="build-title">網頁架構與技術實作</h2>
+            <p class="panel-subtitle">(Structure & Implementation)</p>
+
+            <div class="implementation-layout">
+              <div class="browser-mock">
+                <div class="browser-bar">
+                  <span></span><span></span><span></span>
+                  <i></i>
+                </div>
+                <div class="browser-content">
+                  <h3>首頁 (Hero)</h3>
+                  <div class="hero-preview">
+                    <span class="spark s1"></span>
+                    <span class="spark s2"></span>
+                    <span class="spark s3"></span>
+                    <span class="spark s4"></span>
+                    <p>背景光點移動特效<br />清晰述說技術</p>
+                  </div>
+
+                  <h3>作品展示 (Gallery)</h3>
+                  <div class="mock-gallery">
+                    <article></article>
+                    <article class="highlight">
+                      <span class="tech react">R</span>
+                      <span class="tech css">CSS</span>
+                      <span class="tech js">JS</span>
+                    </article>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                  </div>
+                  <div class="pager"><span></span><span></span><span></span><span></span></div>
+                </div>
+              </div>
+
+              <aside class="side-notes">
+                <article class="info-card compact">
+                  <h3>高度互動的作品展示</h3>
+                  <p>作品網格具備 hover 發光效果，能即時顯示技術棧與作品視覺。</p>
+                </article>
+
+                <div class="form-flow">
+                  <form class="mini-form" aria-label="表單示意">
+                    <strong>訂製聯繫</strong>
+                    <input value="Input" aria-label="input demo" readonly />
+                    <input value="Email" aria-label="email demo" readonly />
+                    <textarea aria-label="message demo" readonly>Message</textarea>
+                    <button type="button">Send</button>
+                  </form>
+                  <div class="integration">
+                    <span class="icon-box">HF</span>
+                    <p>React Hook Form<br />處理訂需求</p>
+                    <span class="icon-box mail">EM</span>
+                    <p>EmailJS<br />使用表單寄送</p>
+                  </div>
+                </div>
+
+                <article class="info-card compact">
+                  <h3>互動式單頁捲動架構</h3>
+                  <p>包含滑鼠追蹤背景、捲動自動點亮區塊與卡片懸停發光效果。</p>
+                </article>
+              </aside>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="gallery">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Portfolio Gallery</p>
+            <h2>作品展示</h2>
+          </div>
+          <p>延續參考圖的框線面板、發光卡片與技術標籤。</p>
+        </div>
+        <div class="gallery-grid">
+          <article class="work-card reveal">
+            <div class="work-visual visual-pink"><span>VOID BAR</span></div>
+            <div class="work-meta">
+              <h3>Void Bar Identity</h3>
+              <p>深夜酒吧品牌霓虹招牌與空間視覺。</p>
+              <span>Brand / Signage</span>
+            </div>
+          </article>
+          <article class="work-card reveal">
+            <div class="work-visual visual-cyan"><span>CYBER ROOM</span></div>
+            <div class="work-meta">
+              <h3>Cyber Room Stage</h3>
+              <p>舞台燈管、光點軌跡與動態牆面。</p>
+              <span>Installation</span>
+            </div>
+          </article>
+          <article class="work-card reveal">
+            <div class="work-visual visual-lime"><span>ACID POP</span></div>
+            <div class="work-meta">
+              <h3>Acid Pop Window</h3>
+              <p>零售櫥窗的高對比螢光視覺。</p>
+              <span>Retail / Window</span>
+            </div>
+          </article>
+          <article class="work-card reveal">
+            <div class="work-visual visual-red"><span>SIGNAL 404</span></div>
+            <div class="work-meta">
+              <h3>Signal 404 Poster</h3>
+              <p>故障招牌靈感的數位動態海報。</p>
+              <span>Motion / Digital</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="section-copy reveal">
+          <p class="eyebrow">Commission Form</p>
+          <h2>訂製聯繫</h2>
+          <p>填寫需求後，表單會先在瀏覽器檢查必填欄位，再整理成郵件草稿。</p>
+        </div>
+        <form class="contact-form reveal" id="commission-form" novalidate>
+          <label>
+            Name
+            <input name="name" type="text" autocomplete="name" required />
+            <span class="error-message"></span>
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" autocomplete="email" required />
+            <span class="error-message"></span>
+          </label>
+          <label>
+            Project Type
+            <select name="type" required>
+              <option value="">Choose one</option>
+              <option>Mini Neon</option>
+              <option>Wall Piece</option>
+              <option>Event Glow</option>
+              <option>Digital Motion</option>
+            </select>
+            <span class="error-message"></span>
+          </label>
+          <label>
+            Project Brief
+            <textarea
+              name="message"
+              rows="5"
+              required
+              placeholder="顏色、尺寸、期限、情緒或你想做成霓虹的文字..."
+            ></textarea>
+            <span class="error-message"></span>
+          </label>
+          <button class="button primary form-button" type="submit">Send Inquiry</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Neon Portfolio System</span>
+      <a href="#hero">Back to top</a>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
